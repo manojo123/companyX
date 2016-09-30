@@ -398,25 +398,29 @@ public class Backend extends javax.swing.JFrame {
     }//GEN-LAST:event_chbBonif2ActionPerformed
 
     private void jtPlanillaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtPlanillaKeyReleased
-        if(jtPlanilla.getSelectedRow() != -1){
-            btnEditar.setEnabled(true);
-            btnEliminar.setEnabled(true);
-        }
-        else{
-            btnEditar.setEnabled(false);
-            btnEliminar.setEnabled(false);
+        if(jtPlanilla.isEnabled()){
+            if(jtPlanilla.getSelectedRow() != -1){
+                btnEditar.setEnabled(true);
+                btnEliminar.setEnabled(true);
+            }
+            else{
+                btnEditar.setEnabled(false);
+                btnEliminar.setEnabled(false);
+            }
         }
     }//GEN-LAST:event_jtPlanillaKeyReleased
 
     private void jtPlanillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPlanillaMouseClicked
-        if(jtPlanilla.getSelectedRow() != -1){
-            btnEditar.setEnabled(true);
-            btnEliminar.setEnabled(true);
+        if(jtPlanilla.isEnabled()){
+            if(jtPlanilla.getSelectedRow() != -1){
+                btnEditar.setEnabled(true);
+                btnEliminar.setEnabled(true);
+            }
+            else{
+                btnEditar.setEnabled(false);
+                btnEliminar.setEnabled(false);
+            }// TODO add your handling code here:
         }
-        else{
-            btnEditar.setEnabled(false);
-            btnEliminar.setEnabled(false);
-        }// TODO add your handling code here:
     }//GEN-LAST:event_jtPlanillaMouseClicked
 
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
